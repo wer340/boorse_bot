@@ -1,0 +1,9 @@
+
+
+
+let timerId =setInterval(() => {
+ document.querySelector('.btn-big.buy').click();
+    console.log('clicked');
+},300);
+let stop = 5000;
+setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);

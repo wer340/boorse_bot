@@ -1,0 +1,23 @@
+sell mat-raised-button mat-sell
+let timerId =setInterval(() => { document.querySelector('.sell.mat-raised-button.mat-sell ').click();
+}, 300);let stop = 10000;setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);
+
+
+let timerId =setInterval(() => { document.querySelector('.buy.mat-raised-button.mat-buy ').click();
+}, 300);let stop = 10000;setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);
+
+
+
+sell mat-raised-button mat-sell
+
+let timerId =setInterval(() => { document.querySelector('.sell.mat-raised-button.mat-sell ').click();
+}, 300);let stop = 10000;setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);
+
+
+
+
+tp-w-100 tp-center tp-3d-bu-gr
+
+let timerId =setInterval(() => { document.querySelector('.tp-w-100.tp-center.tp-3d-bu-gr ').click();
+
+}, 600);let stop = 7000;setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);

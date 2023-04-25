@@ -1,0 +1,6 @@
+let timerId =setInterval(() => {
+ document.querySelector('.title-l.ng-binding').click();
+    console.log('clicked');
+}, 301);
+let stop = 10000;
+setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);

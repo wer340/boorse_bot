@@ -1,0 +1,22 @@
+.tp-w-100.tp-center.tp-3d-bu-gr
+
+let timerId =setInterval(() => { document.querySelector('.tp-w-100.tp-center.tp-3d-bu-gr').click();
+}, 405);let stop = 9000;setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);	
+
+
+WAIT SECONDS=10
+
+
+
+easyTrader mobile
+col-8 btn flex-grow-1 px-0 btn-success
+
+let timerId =setInterval(() => { document.querySelector('.col-8.btn.flex-grow-1.px-0.btn-success').click();
+}, 330);let stop = 15000;setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);
+
+easyTrader web
+
+btn-success
+let timerId =setInterval(() => { document.querySelector('.btn-outline-success').click();
+document.lastModified.querySelector('.btn-success').click();
+}, 300);let stop = 300;setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);	

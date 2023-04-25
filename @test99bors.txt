@@ -1,0 +1,24 @@
+let timerId =setInterval(() => {
+       let tedad  = "5000";
+// ÊÚÏÇÏ ÓåÇã
+       let price  = "19567";
+// ÞíãÊ ÓåÇã
+       document.getElementById("send_order_txtCount").value = tedad;
+       document.getElementById("send_order_txtPrice").value = price;
+// ßÇäÇá ÊáÑÇã ãÇ @test99bors
+       $("#send_order_btnSendOrder").click();
+       console.log('clicked');
+}, 150);
+ // ÒãÇä Èíä Ïæ ÊÇ ÓÝÇÑÔ
+
+// stop zamane tavaghof bar hasbe mili sanie
+
+let stop = 10000;  //ãÏÊ ÒãÇä ÇÑÓÇá ÓÝÇÑÔ Èå ãíáí ËÇäíå
+setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);
+
+
+
+
+
+
+// áØÝÇ ßÇäÇá ãÇ ÑÇ ÏÑ ÊáÑÇã ÏäÈÇá ßäíÏ  @test99bors

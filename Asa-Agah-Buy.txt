@@ -1,0 +1,21 @@
+
+let timerId =setInterval(() => { document.querySelector('.btn.Buy.ng-binding.ng-scope').click();
+}, 355);let stop = 5000;setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);	
+
+
+
+
+
+title-r ng-binding
+let timerId =setInterval(() => { document.querySelector('.title-r').click();
+}, 425);let stop = 10000;setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);	
+
+
+
+
+
+
+
+https://www.youtube.com/watch?v=Np86AN6U0YM
+
+

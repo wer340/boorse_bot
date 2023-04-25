@@ -1,0 +1,11 @@
+
+let timerId =setInterval(() => {
+	
+ document.querySelector('.btn-big.buy').click();
+
+    console.log('clicked');
+}, 355);
+
+// stop zamane tavaghof bar hasbe mili sanie
+let stop =5000;
+setTimeout(() => { clearInterval(timerId); alert('stop'); }, stop);
