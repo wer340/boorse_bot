@@ -3,6 +3,7 @@ robot was created by js for tsetmc
 
 ## run at a spcific time 
 extract by  chat.openai.com  (chatgpt)
+clock time extract from os sys  
 ```js
 // .title-r class  for  agah     .buy-btn  for exirbroker    
 function runFunction() {
