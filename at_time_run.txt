@@ -1,0 +1,28 @@
+
+function runFunction() {
+let timerId =setInterval(() => { document.querySelector('.title-r ').click();
+}, 300);let stop = 10000;setTimeout(() => { clearInterval(timerId);   }, stop);
+}
+
+function executeAtTime(hour, minute, second) {
+  const now = new Date();
+  const targetTime = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate(),
+    hour,
+    minute,
+    second
+  );
+  const timeDifference = targetTime.getTime() - now.getTime();
+  
+  if (timeDifference > 0) {
+    setTimeout(runFunction, timeDifference);
+  } else {
+    // زمان مشخص شده قبل از زمان فعلی است
+    console.log("زمان مشخص شده قبل از زمان فعلی است");
+  }
+}
+
+// اجرای تابع در ساعت 10:30:00
+executeAtTime(10, 17, 33);
