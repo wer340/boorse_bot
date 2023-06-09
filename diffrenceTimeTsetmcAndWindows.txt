@@ -1,0 +1,24 @@
+// Get the current time
+var currentTime = new Date();
+
+// Create a Date object for tsetmc today
+var timeString = document.querySelector("#GlobalTab0Elm > div:nth-child(2) > div.box1.blue.tbl.z1_4.h210 > div.content > table > tbody > tr:nth-child(1) > td:nth-child(2) > span").textContent;
+var timeSegments = timeString.split(':');
+
+var targetTime = new Date();
+targetTime.setHours(parseInt(timeSegments[0]));
+targetTime.setMinutes(parseInt(timeSegments[1]));
+targetTime.setSeconds(parseInt(timeSegments[2]));
+targetTime.setMilliseconds(0);
+
+// Calculate the time difference in milliseconds
+var timeDifference = currentTime - targetTime;
+
+// Convert the time difference to hours, minutes, seconds, and milliseconds
+var hours = Math.floor(timeDifference / (1000 * 60 * 60));
+var minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+var seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+var milliseconds = timeDifference % 1000;
+
+// Output the time difference
+console.log("Time difference:", hours, "hours,", minutes, "minutes,", seconds, "seconds,", milliseconds, "milliseconds");
