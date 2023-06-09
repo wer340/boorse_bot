@@ -1,6 +1,35 @@
 # boorse_bot
 robot was created by js for tsetmc
+## run at spcific time  milisecond
+```js
+function runFunction() {
+ alert("halt")
+}
 
+function executeAtTime(hour, minute, second, millisecond) {
+  const now = new Date();
+  const targetTime = new Date(
+    now.getFullYear(),
+    now.getMonth(),
+    now.getDate(),
+    hour,
+    minute,
+    second,
+    millisecond
+  );
+  const timeDifference = targetTime.getTime() - now.getTime();
+  
+  if (timeDifference > 0) {
+    setTimeout(runFunction, timeDifference);
+  } else {
+    // زمان مشخص شده قبل از زمان فعلی است
+    console.log("زمان مشخص شده قبل از زمان فعلی است");
+  }
+}
+
+// اجرای تابع در ساعت 10:30:45.500
+executeAtTime(8, 44, 53, 860);
+```
 ## run at a spcific time 
 extract by  chat.openai.com  (chatgpt)
 clock time extract from os sys  
